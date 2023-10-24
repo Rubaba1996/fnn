@@ -1,0 +1,59 @@
+.prr1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url(./fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+.prr{
+    margin: 60px 0px 0px 0px;
+}
+.zr{
+    width: 350px;
+}
+.zr:hover{
+    cursor: pointer;
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+.sale{
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+}
+.buy-button, .sell-button{
+margin: 40px 0px 0px 0px;
+width: 150px;
+height: 30px;
+border: none;
+border-radius: 4px;
+background-color: gray;
+color: white;
+}
+.buy-button:hover{
+    cursor: pointer;
+}
+.sell-button:hover{
+    cursor: pointer;
+}
+.pt{
+    background-color: rgb(228, 225, 221);
+}
+.hn{
+    font-family: 'Nunito';
+    font-weight: 500;
+}
+.sale{
+    font-family: 'Nunito';
+}
+
+@media screen and (min-width:335px) and (max-width:600px){
+    .prr1{
+        display: flex;
+         flex-direction: column;
+    }
+    .zr{
+        width: 300px;
+    }
+} 

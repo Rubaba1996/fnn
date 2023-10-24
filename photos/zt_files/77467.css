@@ -1,0 +1,238 @@
+.store-selector-select {
+	position: relative;
+	text-transform: uppercase;
+}[dir] .store-selector-select {
+	margin-bottom: 10px;
+}
+
+.store-selector-select__button {
+	box-sizing: border-box;
+	font-size: var(--font-size-body-s);
+	height: 28px;
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+	text-transform: inherit;
+	white-space: nowrap;
+	width: 100%;
+	line-height: var(--line-height-body-s);
+	letter-spacing: var(--letter-spacing-body-s);
+	font-stretch: var(--font-stretch-normal);
+	font-weight: var(--font-weight-light);
+}
+
+[dir] .store-selector-select__button {
+	background: none;
+	border: 1px solid var(--color-main-020);
+	cursor: pointer;
+	padding: 5px;
+}
+
+[dir=ltr] .store-selector-select__button {
+	text-align: left;
+}
+
+[dir=rtl] .store-selector-select__button {
+	text-align: right;
+}
+
+.store-selector-select__arrow {
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	width: 8px;
+}
+
+[dir] .store-selector-select__arrow {
+	transform: translateY(-50%);
+}
+
+[dir=ltr] .store-selector-select__arrow {
+	right: 8px;
+}
+
+[dir=rtl] .store-selector-select__arrow {
+	left: 8px;
+}
+
+.store-selector-select__item-list {
+	bottom: 0;
+	box-sizing: border-box;
+	max-height: 120px;
+	overflow-x: auto;
+	overflow-y: auto;
+	position: static;
+	width: 100%;
+}
+
+[dir] .store-selector-select__item-list {
+	background-color: var(--color-main-000);
+	border: 1px solid var(--color-main-020);
+}
+
+[dir=ltr] .store-selector-select__item-list {
+	left: 0;
+}
+
+[dir=rtl] .store-selector-select__item-list {
+	right: 0;
+}
+
+.store-selector-select__item {
+	align-items: baseline;
+	display: flex;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+[dir] .store-selector-select__item {
+	cursor: pointer;
+}
+
+[dir=ltr] .store-selector-select__item {
+	padding: 2px 20px 2px 12px;
+}
+
+[dir=rtl] .store-selector-select__item {
+	padding: 2px 12px 2px 20px;
+}
+
+[dir=ltr] .store-selector-select__item--has-icon {
+	padding-left: 0;
+}
+
+[dir=rtl] .store-selector-select__item--has-icon {
+	padding-right: 0;
+}
+
+[dir] .store-selector-select__item--selected {
+	background-color: var(--color-main-020);
+}
+
+.store-selector-select__item-icon {
+	flex-shrink: 0;
+	height: 8px;
+	width: 8px;
+}
+
+[dir] .store-selector-select__item-icon {
+	margin: 0 2px;
+}
+
+.store-selector-select__menu {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+.store-selector-select__menu--open {
+	display: block;
+}
+
+.store-selector-select__legend {
+	font-size: 12px;
+}
+
+.store-selector__legend {
+	display: inline-block;
+}[dir] .store-selector__legend {
+	background: var(--color-main-000);
+	margin-top: var(--spacing-02);
+}[dir=ltr] .store-selector__legend {
+	padding-right: var(--spacing-01);
+}[dir=rtl] .store-selector__legend {
+	padding-left: var(--spacing-01);
+}
+
+.store-selector__icon {
+	height: 8px;
+	width: 8px;
+}
+
+@media screen and (min-width: 768px) {
+	[dir] .store-selector__button {
+		margin-top: var(--spacing-06);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.geolocation-modal {
+		height: auto;
+		max-height: 45%;
+		top: auto;
+	}
+
+	[dir] .geolocation-modal__container {
+		border: none;
+	}
+
+	.geolocation-modal__button {
+		font-size: var(--font-size-body-s);
+		line-height: var(--line-height-body-s);
+		letter-spacing: var(--letter-spacing-body-s);
+		text-transform: uppercase;
+		font-stretch: var(--font-stretch-normal);
+		font-weight: var(--font-weight-light);
+	}
+
+	.geolocation-modal__store-selector .store-selector-select__item-list {
+		max-height: 85px;
+	}
+
+	.geolocation-modal__content-description {
+		font-size: 12px;
+	}
+}
+
+[dir] .geolocation-modal__actions {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+[dir] .geolocation-modal__button {
+	margin: 4px 0;
+}
+
+.geolocation-modal__presence-text {
+	font-size: 9px;
+}
+
+.geolocation-modal__presence-action {
+	font-weight: var(--font-weight-bold);
+	text-decoration: underline;
+}
+
+[dir] .geolocation-modal__presence-action {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	.geolocation-modal {
+		overflow-y: visible;
+	}
+
+	[dir] .geolocation-modal__actions {
+		margin-top: 24px;
+	}
+
+	[dir] .geolocation-modal__button {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+
+	.geolocation-modal__store-selector .store-selector-select__item-list {
+		max-height: 105px;
+	}
+
+	[dir] .geolocation-modal__container {
+		border: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	[dir] .geolocation-modal__container {
+		border: 1px solid var(--color-content-low);
+	}
+}
+

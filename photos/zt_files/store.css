@@ -1,0 +1,230 @@
+.marketing-fashion-content-page .theme--dark {
+	--color-main-000: #fff;
+	--color-main-005: #f2f2f2;
+	--color-main-010: #e5e5e5;
+	--color-main-020: #ccc;
+	--color-main-040: #999;
+	--color-main-060: #666;
+	--color-main-080: #333;
+	--color-main: #000;
+}
+
+/* hide carousel product info for beauty in desktop */
+@media screen and (min-width: 1024px) {
+	html[id*="BEAUTY"] .product-grid-block-carousel__product-info {
+		display: none;
+	}
+
+	html[id*="BEAUTY"] .product-grid-block-carousel__primary-product {
+		width: calc(var(--grid-column-width) * 4 + var(--grid-column-gutter) * 3);
+	}
+
+	html[id*="BEAUTY"] .product-grid-block-carousel__primary-product.product-grid-product--double {
+		margin-left: calc(var(--grid-column-width) * 2 + var(--grid-column-gutter) * 2);
+		width: calc(var(--grid-column-width) * 8 + var(--grid-column-gutter) * 7);
+	}
+}
+
+.media-spin-360__rotate-icon {
+	fill: #fff;
+}
+
+/* clothing experiment ITSMECOM-1523241 */
+li.layout-categories-category[data-categoryid="2050878"] {
+	display: none;
+}
+
+html[data-store="cn"] .layout-footer__stores .layout-footer__item {
+	display: none;
+}
+
+.layout-header-links__desktop-link {
+	white-space: nowrap;
+}
+
+/* beauty nail polish */
+.product-grid-block[data-blockid="5ce3e611-7224-46f6-bf31-05ee0b310f14"] .product-grid-block-product-extended-info__color-list,
+.product-grid-block[data-blockid="a57506a0-5055-4006-ad38-2a92d185b27e"] .product-grid-block-product-extended-info__color-list {
+	display: none;
+}
+
+[id^=product-detail-size-selector-product-detail-interactive-size-guide].product-detail-size-selector__size-list-wrapper {
+	z-index: 350;
+}
+
+@media screen and (min-width: 1024px) {
+	.product-page.theme--origins .carousel__container .media__wrapper.media__wrapper--fill,
+	.product-page.theme--origins .variable-width-carousel .media__wrapper.media__wrapper--fill {
+		overflow: hidden;
+		padding-bottom: 125%!important;
+	}
+}
+
+/* HALLOWEEN EVENT 
+@media screen and (min-width: 768px) {
+	html[id*="HALLOWEEN"],
+	html[id*="HALLOWEEN"] .link,
+	html[id*="HALLOWEEN"] .filters__button,
+	html[id*="HALLOWEEN"] .slider,
+	html[id*="HALLOWEEN"] .layout-header__mobile-action,
+	html[id*="HALLOWEEN"] .product-detail-size-selector__size-list-item,
+	html[id*="HALLOWEEN"] .product-detail-product-size-selector-footer__size-guide-btn {
+		cursor: url("https://static.zara.net/static/contents/icons/halloween/halloween_cursor.svg") 16 16, auto !important;
+
+	}
+}*/
+
+@media screen and (min-width: 768px) {
+    html[id*='HALLOWEEN'],
+    html[id*='HALLOWEEN'] .layout-header-icon,
+    html[id*='HALLOWEEN'] .link,
+    html[id*='HALLOWEEN'] .zds-button,
+    html[id*='HALLOWEEN'] .zds-checkbox,
+    html[id*='HALLOWEEN'] .filters-bar__filter,
+    html[id*='HALLOWEEN'] .zds-checkbox-input,
+    html[id*='HALLOWEEN'] .category-topbar__bar,
+    html[id*='HALLOWEEN'] .view-option-selector-button,
+    html[id*='HALLOWEEN'] .layout-header__mobile-action,
+    html[id*='HALLOWEEN'] .product-add-to-cart__button,
+    html[id*='HALLOWEEN'] .size-selector__size-list-item,
+    html[id*='HALLOWEEN'] .product-size-selector-footer__action-btn,
+    html[id*='HALLOWEEN'] .wishlist-bookmark {
+        cursor: url('https://static.zara.net/static/contents/icons/halloween/ghost-cursor-border.svg') 16 0,
+            auto !important;
+    }
+    .zds-input-base__input {
+        cursor: auto;
+    }
+}
+
+/* VALENTINES DAY EVENT */
+@media screen and (min-width: 768px) {
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"],
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .link,
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .filters__button,
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .slider,
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .layout-header__mobile-action,
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .product-detail-size-selector__size-list-item,
+	html[id*="V2023-MUJER-METAVERSE-VALANTINE-COLLECTION"] .product-detail-product-size-selector-footer__size-guide-btn {
+		cursor: url("https://static.zara.net/static/contents/icons/valentines-day/valentines-day-cursor.svg") 16 16, auto !important;
+
+	}
+}
+
+.product-detail-view__main--bundle + .product-detail-view__cross-selling > .product-detail-cross-selling-grid {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .product-grid-product-add-to-cart {
+        top: initial;
+	}
+}
+
+[dir] .product-detail-card-info__coming-soon-subscriber {
+    background: var(--color-background-base);
+    border: 1px solid var(--color-content-high);
+    color: var(--color-content-high);
+}
+
+@media screen and (min-width: 768px) {
+	.home-page #slider-spot__universe_WOMAN .slider-spot-universe-collections {
+		display: none;
+	}
+}
+
+html[data-store='ww'] .geolocation-modal__button.zds-button--primary {
+	background-color: var(--color-background-base);
+	border: 1px solid var(--color-content-high);
+	color: var(--color-content-high);
+}
+
+html[data-store='ww'] .geolocation-modal__button.zds-button--primary:hover {
+	background-color: var(--color-background-base);
+}
+
+html[data-store='ww'] .geolocation-modal__button.zds-button--secondary {
+	background-color: var(--color-background-contrast);
+	border: 1px solid var(--color-content-inverse);
+	color: var(--color-content-inverse);
+}
+
+/* Solve temporary problems in small devices in home newsletter slide */
+@media screen and (max-height: 670px) and (max-width: 768px) {
+	html[data-store="br"] .home-page .home-footer__newsletter,
+	html[data-store="it"] .home-page .home-footer__newsletter {
+		margin-top: var(--spacing-04);
+	}	
+	html[data-store="br"] .home-page .home-footer__social-network,
+	html[data-store="it"] .home-page .home-footer__social-network {
+		margin-bottom: 100px;
+ 	}
+}
+
+html[data-store="pl"] .products-category-promotional-banner__close-button {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    html[data-store="es"] .home-page .layout-search-link__link,
+	html[data-store="ic"] .home-page .layout-search-link__link,
+	html[data-store="dk"] .home-page .layout-search-link__link,
+	html[data-store="se"] .home-page .layout-search-link__link,
+	html[data-store="mx"] .home-page .layout-search-link__link,
+	html[data-store="tr"] .home-page .layout-search-link__link,
+	html[data-store="no"] .home-page .layout-search-link__link,
+	html[data-store="fr"] .home-page .layout-search-link__link,
+	html[data-store="uk"] .home-page .layout-search-link__link,
+	html[data-store="kr"] .home-page .layout-search-link__link,
+	html[data-store="us"] .home-page .layout-search-link__link,
+	html[data-store="de"] .home-page .layout-search-link__link,
+	html[data-store="at"] .home-page .layout-search-link__link,
+	html[data-store="it"] .home-page .layout-search-link__link,
+	html[data-store="jp"] .home-page .layout-search-link__link,
+	html[data-store="mc"] .home-page .layout-search-link__link,
+	html[data-store="xe"] .home-page .layout-search-link__link,
+	html[data-store="pl"] .home-page .layout-search-link__link,
+	html[data-store="ca"] .home-page .layout-search-link__link,
+	html[data-store="xp"] .home-page .layout-search-link__link,
+    html[data-store="us"] .home-page .layout-search-link__link {
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+/* Meisel */
+.products-category-grid-block-infinite-carousel.products-category-grid-block-infinite-carousel--meisel {
+    margin: 0;
+    padding: 40px 0;
+}
+
+[dir] .products-category-grid-block-infinite-carousel-navigation__bullet {
+    background-color: currentColor;
+}
+
+[dir] .products-category-grid-block-infinite-carousel-navigation__bullet--secondary {
+    background-color: var(--color-content-low);
+}
+
+.products-category-grid-block-infinite-carousel-navigation__prev,
+.products-category-grid-block-infinite-carousel-navigation__next {
+    fill: currentColor;
+}
+
+.products-category-grid-block-infinite-carousel--meisel .products-category-grid-block-infinite-carousel__info,
+.product-grid-block__container--meisel .product-grid-product__data {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .product-grid-block__container--meisel {
+        margin: 104px 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .product-grid-block__container--meisel {
+        margin: 160px 0;
+    }
+}
+/* Meisel end */

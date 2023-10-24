@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url(./fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Roboto1';
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto2";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+.about{
+    background-color: rgb(228, 225, 221);
+}
+.dg{
+    display: flex;
+    margin: 80px 0px 0px 100px;
+}
+.dg1{
+    border: 3px solid gray;
+    border-radius: 6px;
+    width: 520px;
+    height: 280px;
+    background-color:rgb(236, 236, 223);
+}
+.lead{
+    font-family: 'Nunito';
+    padding: 20px 0px 0px 0px;
+}
+.dg1:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.dg2:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.dg2{
+    border: 3px solid gray;
+    border-radius: 6px;
+    width: 520px;
+    height: 280px;
+    margin: 0px 0px 0px 30px;
+    background-color:rgb(236, 236, 223);
+}
+.iu1{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 5px 0px 0px 20px;
+}
+.lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.san{
+    margin: 0px 0px 10px 30px;
+    color:gray;
+    font-family: 'Nunito';
+}
+.san1{
+    color:gray;
+    font-family: 'Nunito';
+    margin: 0px 0px 10px 30px;
+}
+.ss1{
+    margin: 0px 0px 10px 30px;
+    color:rgb(75, 51, 51);
+    font-family: 'Roboto1';
+    font-size: 15px;
+}
+.slider1{
+    width: 1000px;
+    height: 800px;
+    margin: -120px auto;
+    position: relative;
+}
+.iuu{
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    top:20%;
+    left: -25%;
+    opacity: 0;
+    transform: translate(0);
+    transition: 0.5s;
+    padding: 100px 0px 150px 0px;
+}
+.show1{
+    opacity: 1;
+    transform: translate(50%);
+}
+.btnn{
+    position: absolute;
+    z-index: 1;
+    top:65%;
+    left:9%;
+    width: 100px;
+    height: 30px;
+    transform: translate(-50%,50%);
+    background-color:gray;
+    border: none;
+    border-radius: 7px;
+    color:white;
+}
+#nextv{
+    left: unset;
+    right: -1%;
+    transform: translate(50%,-50%);
+}
+.hl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+    font-family: 'Roboto1';
+}
+.card{
+    margin: 150px 0px 0px 50px;
+    width: 500px;
+    height: 300px;
+    perspective: 900px;
+}
+.card-inner{
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 0.5s;
+}
+.aw1,.aw2{
+    width: 500px;
+    height: 300px;
+    border-radius: 6px;
+}
+.front,.back{
+    position: absolute;
+    margin: 70px 0px 0px 100px;
+}
+.back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.card1{
+    margin: 150px 0px 0px 120px;
+    width: 500px;
+    height: 300px;
+    perspective: 900px;
+    position: relative;
+    left:80%;
+}
+.card-inner1{
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 0.5s;
+}
+.aw3,.aw4{
+    width: 500px;
+    height: 300px;
+    border-radius: 6px;
+}
+.front1,.back1{
+    position: absolute;
+    margin: 70px 0px 0px 100px;
+}
+.back1{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card1:hover .card-inner1{
+    transform: rotateY(180deg);
+}
+.card1:hover{
+    cursor: pointer;
+}
+
+
+.hg{
+    margin: 100px 0px 0px 0px;
+    padding: 110px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Nunito';
+}
+.hg1{
+    margin:100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    margin: 150px 0px 0px 30px;
+}
+.blogg1,.blogg2,.blogg3{
+    width: 360px;
+    height: 200px;
+}
+.pf{
+    margin: 30px 0px 0px 0px;
+    color:rgb(56, 54, 54);
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+.blog1,.blog2,.blog3{
+    width: 360px;
+    height: 420px;
+    margin: 0px 0px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    
+}
+.blog1:hover{
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    background-color:beige;
+    transition: 0.5s;
+}
+.blog2:hover{
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: beige;
+    transition: 0.5s;
+}
+.blog3:hover{
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: beige;
+    transition: 0.5s;
+}
+.bll{
+    padding: 120px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Nunito';
+}
+@media  screen and (min-width:335px) and (max-width:991px) {
+    .dg{
+        display: flex;
+        flex-direction: column;
+    }
+    .dg1{
+        margin: 0px 0px 0px 90px;
+    }
+    .dg2{
+        margin: 10px 0px 0px 90px;
+    }
+    .lead{
+        margin: 0px 0px 0px 120px;
+    }
+}
+@media  screen and (min-width:992px) and (max-width:1279px) {
+    .dg1{
+        height: 305px;
+    }
+    .dg2{
+        height: 305px;
+    }
+}
+
+@media  screen and (min-width:335px) and (max-width:600px) {
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog1,.blog2,.blog3{
+        width: 500px;
+        margin: 60px 0px 0px 0px;
+     
+    }
+    .blogg1,.blogg2,.blogg3{
+        width: 500px;
+    }
+    .pf{
+        font-size: 18px;
+    }
+}
+@media  screen and (min-width:601px) and (max-width:991px) {
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog1,.blog2,.blog3{
+        width: 700px;
+        margin: 60px 0px 0px 0px;
+     
+    }
+    .blogg1,.blogg2,.blogg3{
+        width: 700px;
+    }
+    .pf{
+        font-size: 20px;
+    }
+}
